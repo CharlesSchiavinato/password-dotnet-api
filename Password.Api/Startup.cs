@@ -39,7 +39,7 @@ namespace Password.Api
             Password.MinUpperCase = Int32.Parse(Configuration.GetSection("Password").GetSection("MinUpperCase").Value);
             Password.MinLowerCase = Int32.Parse(Configuration.GetSection("Password").GetSection("MinLowerCase").Value);
             Password.MinSymbol = Int32.Parse(Configuration.GetSection("Password").GetSection("MinSymbol").Value);
-            Password.CharSymbol = Configuration.GetSection("Password").GetSection("PatternSymbol").Value;
+            Password.CharSymbol = Configuration.GetSection("Password").GetSection("CharSymbol").Value;
             Password.RepeatChar = Convert.ToBoolean(Configuration.GetSection("Password").GetSection("RepeatChar").Value);
         }
 
